@@ -1,0 +1,42 @@
+body {
+    background: var(--bgcolor-primary);
+    color: var(--text-color-primary);
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.03em;
+}
+
+.link {
+    text-decoration: none;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus{
+        color: $brand-color-accent;
+    }
+}
+
+.list {
+    padding: 0;
+    list-style-type: none;
+}
+
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+

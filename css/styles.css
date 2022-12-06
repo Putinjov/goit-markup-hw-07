@@ -330,15 +330,7 @@ h6 {
   border-radius: 4px;
 }
 
-.modal-title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 0.86;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--text-color-primary);
-  margin-bottom: 30px;
-}
+
 
 .form .list {
   width: 100%;
@@ -484,7 +476,7 @@ h6 {
   text-align: center;
 }
 
-.section.about {
+.section.work {
   padding-top: 0;
 }
 

@@ -1,0 +1,28 @@
+.features__list {
+    display: flex;
+    gap: $gap;
+}
+
+.features__item {
+    flex-basis: calc((100% - (3 * var(--gap))) / 4);
+}
+
+.features__description {
+    display: block;
+    margin-top: 10px;
+
+    font-size: 14px;
+    line-height: 1.7;
+
+    color: #757575;
+}
+
+.features__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    background-color: var(--bgcolor-secondary);
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
