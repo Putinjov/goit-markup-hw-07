@@ -1,87 +1,79 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebStudio</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
 
-  <body>
-    <!--Top Line-->
-    <header class="top-line">
-      <div class="container page-header">
-        <a class="logo" href="/">Web<span class="logo-header">Studio</span></a>
-        <nav>
-          <!-- Menu navigation -->
-          <ul class="site-nav list">
-            <li class="item"><a class="link" href="./index.html">Студія</a></li>
-            <li class="item">
-              <a class="link current" href="./portfolio.html">Портфоліо</a>
-            </li>
-            <li class="item"><a class="link" href="">Контакти</a></li>
-          </ul>
-        </nav>
-        <!--Contacts-->
-        <ul class="contacts list">
-          <li class="item">
-            <a class="link" href="mailto:info@devstudio.com">
-              <svg class="contacts-icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use></svg>info@devstudio.com</a>
-          </li>
-          <li class="item">
-            <a class="link" href="tel:+380961111111">
-              <svg class="contacts-icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebStudio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+
+<body>
+<!--Top Line-->
+<header class="top-line">
+  <div class="container page-header">
+    <a class="logo" href="/">Web<span class="logo-header">Studio</span></a>
+    <nav>
+      <!-- Menu navigation -->
+      <ul class="site-nav list">
+        <li class="site-nav__item"><a class="site-nav__link link" href="./index.html">Студія</a></li>
+        <li class="site-nav__item"><a class="site-nav__link link current" href="./portfolio.html">Портфоліо</a></li>
+        <li class="site-nav__item"><a class="site-nav__link link" href="">Контакти</a></li>
+      </ul>
+    </nav>
+    <!--Contacts-->
+    <ul class="contacts__list list">
+      <li class="contacts__item">
+        <a class="contacts__link link" href="mailto:info@devstudio.com">
+          <svg class="contacts__icon" width="16" height="12">
+            <use href="./images/icons.svg#icon-envelope"></use>
+          </svg>info@devstudio.com</a>
+      </li>
+      <li class="contacts__item">
+        <a class="contacts__link link" href="tel:+380961111111">
+          <svg class="contacts__icon" width="10" height="16">
+            <use href="./images/icons.svg#icon-smartphone"></use>
+          </svg>+38 096 111 11 11</a>
+      </li>
+    </ul>
+  </div>
+</header>
     <main>
-      <section class="section">
+      <section class="cardset">
         <div class="container">
-          <h1 hidden class="section-title">Портфоліо</h1>
+          <h1 hidden class="cardset__title">Портфоліо</h1>
           <ul class="filter list">
-            <li class="item">
-              <button class="filter-button" type="button">Усі</button>
+            <li class="filter__item">
+              <button class="button filter__button" type="button">Усі</button>
             </li>
-            <li class="item">
-              <button class="filter-button" type="button">Веб-сайти</button>
+            <li class="filter__item">
+              <button class="button filter__button" type="button">Веб-сайти</button>
             </li>
-            <li class="item">
-              <button class="filter-button" type="button">Додатки</button>
+            <li class="filter__item">
+              <button class="button filter__button" type="button">Додатки</button>
             </li>
-            <li class="item">
-              <button class="filter-button" type="button">Дизайн</button>
+            <li class="filter__item">
+              <button class="button filter__button" type="button">Дизайн</button>
             </li>
-            <li class="item">
-              <button class="filter-button" type="button">Маркетинг</button>
+            <li class="filter__item">
+              <button class="button filter__button" type="button">Маркетинг</button>
             </li>
           </ul>
           <ul class="gallery list">
-            <li class="item">
-              <a class="link" href="">
+            <li class="gallery__item">
+              <a class="gallery__link link" href="">
                 <div class="gallery-thumbs">
                   <img
-                    class="image"
+                    class="gallery-thumbs__image"
                     src="./images/notebook.jpg"
                     alt="Photo"
                     width="370"
                   />
                   <div class="overlay">
-                    <p class="overlay-text">
+                    <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -89,193 +81,193 @@
                     </p>
                   </div>
                 </div>
-                <div class="text">
-                  <h2 class="title">Технокряк</h2>
-                  <p class="gallery-caption">Веб-сайт</p>
+                <div class="thumbs__text">
+                  <h2 class="thumbs__title">Технокряк</h2>
+                  <p class="thumbs__caption">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a class="link" href="">
+            <li class="gallery__item">
+              <a class="gallery__link link" href="">
                 <div class="gallery-thumbs">
                   <img
-                    class="image"
+                    class="gallery-thumbs__image"
                     src="./images/poster.jpg"
                     alt="Photo"
                     width="370"
                   />
                   <div class="overlay">
-                    <p class="overlay-text">
+                    <p class="overlay__text">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Inventore, iusto. Eius quaerat illum est laborum dolorum
                       quam mollitia facere corrupti inventore eveniet.
                     </p>
                   </div>
                 </div>
-                <div class="text">
-                  <h2 class="title">Постер New Orlean vs Golden Star</h2>
-                  <p class="gallery-caption">Дизайн</p>
+                <div class="thumbs__text">
+                  <h2 class="thumbs__title">Постер New Orlean vs Golden Star</h2>
+                  <p class="thumbs__caption">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a class="link" href="">
+            <li class="gallery__item">
+              <a class="gallery__link link" href="">
                 <div class="gallery-thumbs">
                   <img
-                    class="image"
+                    class="gallery-thumbs__image"
                     src="./images/seafood.jpg"
                     alt="Photo"
                     width="370"
                   />
                   <div class="overlay">
-                    <p class="overlay-text">
+                    <p class="overlay__text">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Inventore, iusto. Eius quaerat illum est laborum dolorum
                       quam mollitia facere corrupti inventore eveniet.
                     </p>
                   </div>
                 </div>
-                <div class="text">
-                  <h2 class="title">Ресторан Seafood</h2>
-                  <p class="gallery-caption">Додаток</p>
+                <div class="thumbs__text">
+                  <h2 class="thumbs__title">Ресторан Seafood</h2>
+                  <p class="thumbs__caption">Додаток</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a class="link" href="">
+            <li class="gallery__item">
+              <a class="gallery__link link" href="">
                 <div class="gallery-thumbs">
                   <img
-                    class="image"
+                    class="gallery-thumbs__image"
                     src="./images/earphones.jpg"
                     alt="Photo"
                     width="370"
                   />
                   <div class="overlay">
-                    <p class="overlay-text">
+                    <p class="overlay__text">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Inventore, iusto. Eius quaerat illum est laborum dolorum
                       quam mollitia facere corrupti inventore eveniet.
                     </p>
                   </div>
                 </div>
-                <div class="text">
-                  <h2 class="title">Проєкт Prime</h2>
-                  <p class="gallery-caption">Маркетинг</p>
+                <div class="thumbs__text">
+                  <h2 class="thumbs__title">Проєкт Prime</h2>
+                  <p class="thumbs__caption">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a class="link" href="">
+            <li class="gallery__item">
+              <a class="gallery__link link" href="">
                 <div class="gallery-thumbs">
                   <img
-                    class="image"
+                    class="gallery-thumbs__image"
                     src="./images/boxes.jpg"
                     alt="Photo"
                     width="370"
                   />
                   <div class="overlay">
-                    <p class="overlay-text">
+                    <p class="overlay__text">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Inventore, iusto. Eius quaerat illum est laborum dolorum
                       quam mollitia facere corrupti inventore eveniet.
                     </p>
                   </div>
                 </div>
-                <div class="text">
-                  <h2 class="title">Проєкт Boxes</h2>
-                  <p class="gallery-caption">Додаток</p>
+                <div class="thumbs__text">
+                  <h2 class="thumbs__title">Проєкт Boxes</h2>
+                  <p class="thumbs__caption">Додаток</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a class="link" href="">
+            <li class="gallery__item">
+              <a class="gallery__link link" href="">
                 <div class="gallery-thumbs">
                   <img
-                    class="image"
+                    class="gallery-thumbs__image"
                     src="./images/monitor.jpg"
                     alt="Photo"
                     width="370"
                   />
                   <div class="overlay">
-                    <p class="overlay-text">
+                    <p class="overlay__text">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Inventore, iusto. Eius quaerat illum est laborum dolorum
                       quam mollitia facere corrupti inventore eveniet.
                     </p>
                   </div>
                 </div>
-                <div class="text">
-                  <h2 class="title" lang="en">Inspiration has no Borders</h2>
-                  <p class="gallery-caption">Веб-сайт</p>
+                <div class="thumbs__text">
+                  <h2 class="thumbs__title" lang="en">Inspiration has no Borders</h2>
+                  <p class="thumbs__caption">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a class="link" href="">
+            <li class="gallery__item">
+              <a class="gallery__link link" href="">
                 <div class="gallery-thumbs">
                   <img
-                    class="image"
+                    class="gallery-thumbs__image"
                     src="./images/limited.jpg"
                     alt="Photo"
                     width="370"
                   />
                   <div class="overlay">
-                    <p class="overlay-text">
+                    <p class="overlay__text">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Inventore, iusto. Eius quaerat illum est laborum dolorum
                       quam mollitia facere corrupti inventore eveniet.
                     </p>
                   </div>
                 </div>
-                <div class="text">
-                  <h2 class="title">Видання Limited Edition</h2>
-                  <p class="gallery-caption">Дизайн</p>
+                <div class="thumbs__text">
+                  <h2 class="thumbs__title">Видання Limited Edition</h2>
+                  <p class="thumbs__caption">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a class="link" href="">
+            <li class="gallery__item">
+              <a class="gallery__link link" href="">
                 <div class="gallery-thumbs">
                   <img
-                    class="image"
+                    class="gallery-thumbs__image"
                     src="./images/lab.jpg"
                     alt="Photo"
                     width="370"
                   />
                   <div class="overlay">
-                    <p class="overlay-text">
+                    <p class="overlay__text">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Inventore, iusto. Eius quaerat illum est laborum dolorum
                       quam mollitia facere corrupti inventore eveniet.
                     </p>
                   </div>
                 </div>
-                <div class="text">
-                  <h2 class="title">Проєкт LAB</h2>
-                  <p class="gallery-caption">Маркетинг</p>
+                <div class="thumbs__text">
+                  <h2 class="thumbs__title">Проєкт LAB</h2>
+                  <p class="thumbs__caption">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a class="link" href="">
+            <li class="gallery__item">
+              <a class="gallery__link link" href="">
                 <div class="gallery-thumbs">
                   <img
-                    class="image"
+                    class="gallery-thumbs__image"
                     src="./images/business.jpg"
                     alt="Photo"
                     width="370"
                   />
                   <div class="overlay">
-                    <p class="overlay-text">
+                    <p class="overlay__text">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                       Inventore, iusto. Eius quaerat illum est laborum dolorum
                       quam mollitia facere corrupti inventore eveniet.
                     </p>
                   </div>
                 </div>
-                <div class="text">
-                  <h2 class="title" lang="en">Growing Business</h2>
-                  <p class="gallery-caption">Додаток</p>
+                <div class="thumbs__text">
+                  <h2 class="thumbs__title" lang="en">Growing Business</h2>
+                  <p class="thumbs__caption">Додаток</p>
                 </div>
               </a>
             </li>
@@ -286,94 +278,66 @@
     <!--Підвал-->
     <footer class="footer">
       <div class="container">
-        <div class="footer-flex">
-          <div class="footer-contacts">
-            <a class="logo" href="/"
-              >Web<span class="logo-footer">Studio</span></a
-            >
+        <div class="footer__flex">
+          <div class="footer__contacts">
+            <a class="logo" href="/">Web<span class="logo-footer">Studio</span></a>
             <address>
-              <ul class="address list">
-                <li class="item">м. Київ, пр-т Лесі Українки, 26</li>
-                <li class="item">
-                  <a class="link" href="mailto:info@devstudio.com"
-                    >info@devstudio.com</a
-                  >
+              <ul class="address__list list">
+                <li class="address__item">м. Київ, пр-т Лесі Українки, 26</li>
+                <li class="address__item">
+                  <a class="address__link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
-                <li class="item">
-                  <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+                <li class="address__item">
+                  <a class="address__link link" href="tel:+380961111111">+38 096 111 11 11</a>
                 </li>
               </ul>
             </address>
           </div>
-          <div class="footer-social">
-            <span class="social-uptitle">Приєднуйтесь</span>
+          <div class="footer__social">
+            <span class="social__title">Приєднуйтесь</span>
             <ul class="footer-icon list">
-              <li class="item">
-                <a
-                  class="link"
-                  href="http://instagram.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <svg class="icon" width="20" height="20">
+              <li class="footer-icon__item">
+                <a class="footer-icon__link link" href="http://instagram.com" target="_blank" rel="noopener noreferrer">
+                  <svg class="footer-icon__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
-              <li class="item">
-                <a
-                  class="link"
-                  href="http://twitter.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <svg class="icon" width="20" height="20">
+              <li class="footer-icon__item">
+                <a class="footer-icon__link link" href="http://twitter.com" target="_blank" rel="noopener noreferrer">
+                  <svg class="footer-icon__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
-              <li class="item">
-                <a
-                  class="link"
-                  href="http://facebook.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <svg class="icon" width="20" height="20">
+              <li class="footer-icon__item">
+                <a class="footer-icon__link link" href="http://facebook.com" target="_blank" rel="noopener noreferrer">
+                  <svg class="footer-icon__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li class="item">
-                <a
-                  class="link"
-                  href="http://LinkedIn.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <svg class="icon" width="20" height="20">
+              <li class="footer-icon__item">
+                <a class="footer-icon__link link" href="http://LinkedIn.com" target="_blank" rel="noopener noreferrer">
+                  <svg class="footer-icon__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
                 </a>
               </li>
             </ul>
           </div>
-          <div class="footer-push">
-            <span class="push-text">Підпишіться на розсилку</span>
-            <form class="footer-form">
-              <label class="footer-label" for="push">
-                <input
-                  id="push"
-                  type="email"
-                  name="email"
-                  class="footer-input"
-                  placeholder="E-mail"
-                />
-              </label>
-              <button type="submit" class="button">Підписатися
-                <svg width="24" height="24" class="push-icon">
-                  <use href="./images/icons.svg#icon-send"></use>
-                </svg>
+          <div class="footer__push push">
+            <span class="push__title">Підпишіться на розсилку</span>
+            <form>
+              <div class="push__form form">
+                <label for="push" class="form__label">
+                  <input type="email" name="email" id="push" class="form__input" placeholder="E-mail">
+                </label>
+                <button type="submit" class="form__button button">Підписатися
+                  <svg width="24" height="24" class="form__icon">
+                    <use href="./images/icons.svg#icon-send"></use>
+                  </svg>
+              </div>
               </button>
             </form>
           </div>

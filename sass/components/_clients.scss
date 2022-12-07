@@ -1,0 +1,35 @@
+.clients__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.clients__item {
+    flex-basis: calc((100% - (5 * $gap)) / 6);
+}
+
+.clients__link {
+    display: block;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    padding: 16px 32px;
+    color: $social-icon-color;
+
+    transition:
+            border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients__icon {
+    fill: $social-icon-color;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients__link{
+    &:hover,
+    &:focus{ 
+    .clients__icon{
+        fill: $brand-color-accent;}
+    border: 1px solid $brand-color-accent;
+    }
+}

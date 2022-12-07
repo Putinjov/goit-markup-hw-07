@@ -41,10 +41,31 @@
   text-transform: uppercase;
   }
 
-.cards-title {
+.cards__title {
     margin-bottom: 10px;
 
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
+}
+
+.social__title,
+.push__title {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $white-color;
+}
+
+.thumbs__title {
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
 }

@@ -2,18 +2,18 @@
     padding: 94px 0;
 }
 
-.section-features,
-.section-work,
-.section-team,
-.section-clients,
-.section-cardset{
+.features,
+.work,
+.team,
+.clients,
+.cardset{
     @extend %section;
 }
 
-.section-work {
+.work {
     padding-top: 0;
 }
 
-.section-team{
+.team{
     background-color: $bgcolor-secondary;
 }

@@ -21,8 +21,8 @@
     &__item:first-child {
         margin-left: 93px;
     }
-
-    &__link {
+}
+.site-nav__link {
         position: relative;
         display: block;
         padding-top: 32px;
@@ -33,13 +33,15 @@
         line-height: 1.1;
 
         color: inherit;
-    }
+
+    &:hover,
+    &:focus {
+        color: $brand-color-accent;
+            }
 }
 
 .current {
     color: $brand-color-accent;
-   
-
 
     &::after {
         content: "";
@@ -57,9 +59,6 @@
     }
 }
 
-
-
-/*Contacts*/
 
 .contacts__list {
     display: flex;
@@ -108,8 +107,8 @@
     &:hover,
     &:focus {
         .contacts__icon {
-            color: $brand-color-accent;
             fill: $brand-color-accent;
         }
+        color: $brand-color-accent;
     }
 }
